@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <h1><b>welcome</b> : abc@xyz.com </h1>
+    <button style="background-color: cornflowerblue;" id="logoutbtn" ><a href="./index.html">logout</a></button>
+    <fieldset style="height : 550px;"><legend>team</legend>
+        <div id="teamsown"><h2 style="text-decoration-line: underline;">teams you own</h2></div>
+        <hr>
+        <div id="teamspartof"><h2 style="text-decoration-line: underline;">teams you are part of</h2> </div>
+        <button style="background-color: rgb(86, 86, 252);" onclick="createTeam()"><b>Create a Team</b></button>
+
+       
+    </fieldset >
+     <div id="createteam_none"><h2 ><b>Create a Team</b></h2>
+        <br>
+        <input type="text" id="create_team" placeholder="Team Name" size="30">
+        <br><br>
+
+        <select name="catergories" id="category" >
+        <option value="category1" selected="selected">Programmer</option>
+        <option value="category2">engineer</option>
+        <option value="category3">management</option>
+        </select>
+        <br><br>
+
+        <input type="text" id="memebertype" placeholder="member (type email)"  size="30"><br><br>
+
+        <button style="background-color: cornflowerblue;" class="button" ><b>Create</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button style="background-color: rgb(230, 65, 65);" class="button" onclick="hiddenBtn()" id="cancel_btn"><b>Cancel</b></button>
+        </div>
+        
+    <script src="./app.js"></script>
+</body>
+</html>
